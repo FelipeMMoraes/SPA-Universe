@@ -1,0 +1,125 @@
+body {
+  background-image: url(../img/mountains-universe-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+nav ul {
+  display: flex;
+  gap: 3.2rem;
+  margin-left: 7.2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+nav ul li a {
+  font-size: 2.1rem;
+  font-family: "Roboto", sans-serif;
+  color: #E1E1E6;
+  text-decoration: none;
+  transition: 0.2s ease-in;
+}
+nav ul li a:hover {
+  color: #FFFFFF;
+  transition: 0.2s ease-in;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  margin-top: 17.8rem;
+}
+main h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6rem;
+  color: #E1E1E6;
+}
+main a {
+  margin: 0 auto;
+}
+main a button {
+  margin-top: 1.8rem;
+  padding: 1.2rem 3.2rem;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+main a button:hover {
+  background-color: #FFFFFF;
+  color: #02799D;
+  transition: 0.2s ease-in;
+}
+
+#app {
+  margin-top: 6.3rem;
+  margin-inline: 10.2rem;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
