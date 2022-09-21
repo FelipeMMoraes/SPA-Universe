@@ -1,71 +1,39 @@
 body {
-  background-image: url(../img/mountains-universe-1.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  overflow: hidden;
+   background-color: rgb(2, 1, 22);
 }
 
-nav {
-  ul {
-    display: flex;
-    gap: 3.2rem;
-    margin-left: 7.2rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    align-items: center;
+header {
+   nav {
+      margin-left: 7.2rem;
+      display: flex;
+      align-items: center;
+      gap: 3.2rem;
 
-    li a {
-      font-size: $fs-nav;
-      font-family: $ff-primary;
-      color: $color-primary;
-      text-decoration: none;
-      transition: 0.2s ease-in
-    }
-    li a:hover {
-      color: $color-white;
-      transition: 0.2s ease-in;
-      font-size: 2.2rem;
-      font-weight: bold;
-    }
-  }
-}
+      .logo {
+         display: block;
+      }
 
-main {
-  display: grid;
-  place-content: center;
-  margin-top: 17.8rem;
+      ul {
+         gap: 3.2rem;
+         display: flex;
+         padding-top: 4rem;
+         padding-bottom: 4rem;
+         align-items: center;
 
-  h1 {
-    font-family: $ff-primary;
-    font-weight: 700;
-    font-size: 4.8rem;
-    line-height: 6rem;
-    color: $color-primary;
-  }
+         li a {
+            font-size: $fs-nav;
+            font-family: $ff-primary;
+            color: $color-primary;
+            text-decoration: none;
+            transition: 0.2s ease-in;
+         }
 
-  a {
-    margin: 0 auto;
-    button {
-      margin-top: 1.8rem;
-      padding: 1.2rem 3.2rem;
-      border-radius: 5px;
-
-      background-color: transparent;
-      border: 2px solid $color-white;
-
-      font-family: $ff-primary;
-      color: $color-white;
-      font-size: $fs-button;
-      font-weight: 700;
-      cursor: pointer;
-      transition: 0.2s ease-in;
-    }
-    button:hover {
-      background-color: $color-white;
-      color: $color-button;
-      transition: 0.2s ease-in;
-    }
-  }
+         li a:hover {
+            color: $color-white;
+            transition: 0.2s ease-in;
+            font-size: 2.2rem;
+            font-weight: bold;
+         }
+      }
+   }
 }
