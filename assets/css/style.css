@@ -112,9 +112,67 @@ header nav ul li a:hover {
   background-image: url("../img/mountains-universe-1.png");
 }
 
+.hamburguer {
+  display: none;
+  cursor: pointer;
+}
+.hamburguer .bar {
+  display: block;
+  width: 2.8rem;
+  height: 3px;
+  border-radius: 2px;
+  margin: 5px auto;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  .hamburguer {
+    margin-right: 2rem;
+    display: block;
+    justify-content: space-between;
+  }
+
+  .hamburguer.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburguer.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburguer.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: -300px;
+    left: 0;
+    gap: 0;
+    background-color: rgb(2, 1, 22);
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-item {
+    margin: 1.6rem 0;
+  }
+
+  .nav-menu.active {
+    top: 0;
+    height: 100vh;
+  }
+}
 @media (max-width: 768px) {
   .home h1 {
-    font-size: 2.2rem;
+    font-size: 3.2rem;
   }
   .home a button {
     margin-top: 0.8rem;
@@ -122,24 +180,24 @@ header nav ul li a:hover {
     font-size: 1.2rem;
   }
 
-  .exploration h1, .universe h1 {
+  .exploration h1,
+.universe h1 {
     font-size: 3.8rem;
   }
-  .exploration p, .universe p {
+  .exploration p,
+.universe p {
     font-size: 1.5rem;
     width: 100%;
     max-width: 50rem;
   }
 }
 @media (max-width: 600px) {
-  nav ul {
-    margin-left: 2rem;
+  nav {
+    margin-left: 2rem !important;
+    margin-top: 2rem !important;
   }
-  nav ul li {
-    display: none;
-  }
-
-  .exploration, .universe {
+  .exploration,
+.universe {
     margin-left: 2rem;
     margin-right: 2rem;
   }
